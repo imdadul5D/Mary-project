@@ -1,0 +1,326 @@
+/* ==== GoogleFont Link ====*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif ;
+}
+ol,ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    gap: 30px;
+}
+
+/* Header Part Start */
+#header {
+    background-color: #FFF8F3;
+}
+
+/* Navbar Part Start */
+#navbar {
+    width: 100%;
+    height: 100px;
+}
+#navbar .navIcon_col {
+    width: 50%;
+    line-height: 100px;
+}
+#navbar .navIcon_col h3 {
+    font-size: 45px;
+    font-weight: 800;
+    color: #181818;
+}
+#navbar .navIcon_col h3 span {
+    color: #FD6E0A;
+}
+#navbar .navMenu_col {
+    width: 50%;
+    line-height: 100px;
+}
+#navbar .navMenu_col ul {
+    display: flex;
+    justify-content: flex-end;
+}
+#navbar .navMenu_col ul li a {
+    font-size: 20px;
+    font-weight: 400;
+    color: #474747;
+    margin: 0px 25px;
+}
+#navbar .navMenu_col ul li button {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    padding: 18px 35px;
+    background-color: #FD6E0A;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Banner Part */
+#banner .banner_main {
+    display: flex;
+    align-items: center;
+}
+#banner .bannerText_col {
+    width: 50%;
+}
+#banner .bannerText_col h3 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #474747;
+}
+#banner .bannerText_col h1 {
+    font-size: 85px;
+    font-weight: 700;
+    color: #181818;
+    text-transform: capitalize;
+}
+#banner .bannerText_col p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #757575;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+#banner .bannerText_col button {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFF;
+    padding: 18px 17px;
+    background-color: #FD6E0A;
+    border: 0;
+    border-radius: 5px;
+}
+#banner .bannerImg_col {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+}
+#banner .bannerImg_col img {
+    width: 500px;
+}
+#banner .bannerImg_col::before {
+    position: absolute;
+    content: '';
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/header_bg.png');
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+/* About Part CSS */
+#about {
+    padding: 130px 0px;
+}
+#about .about_main {
+    background-color: #FFF8F3;
+    text-align: center;
+    padding: 130px 155px;
+}
+#about .aboutDescription_col h4 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #181818;
+}
+#about .aboutDescription_col p {
+    font-size: 18px;
+    font-weight: 400;
+    color:#757575;
+    line-height: 30px;
+    padding: 30px 0px;
+}
+.aboutInfo_main {
+    display: flex;
+    justify-content: space-between;
+}
+#about .aboutInfo_col p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color:#757575;
+}
+#about .aboutInfo_col h5 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color:#474747;
+}
+
+/* Service Part Start */
+#service {
+    padding-bottom: 130px;
+}
+#service .serviceDescription_col {
+    text-align: center;
+}
+#service .serviceDescription_col h4 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #181818;
+}
+#service .serviceDescription_col p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #181818;
+    padding: 30px 155px 50px 155px;
+}
+#service .service_item {
+    width: 25%;
+    padding: 30px 33px;
+    border-radius: 5px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+#service .service_item h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #181818;
+    padding: 30px 0px 20px 0px;
+
+}
+#service .service_item p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #757575;
+}
+
+/* Summary Part  */
+#summary {
+    padding-bottom: 130px;
+}
+#summary .summary_Col {
+    text-align: center;
+}
+#summary .summary_Col h4 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    color: #181818;
+    padding-bottom: 113px;
+}
+#summary .summaryItem_col {
+    width: 50%;
+}
+#summary .summaryItem_col h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #474747;
+}
+#summary .summaryItem_col h5 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #474747;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+#summary .summaryItem_col h6 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #757575;
+    padding-bottom: 20px;
+}
+#summary .summaryItem_col p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #757575;
+    padding-right: 110px;
+    padding-bottom: 30px;
+}
+#summary .summary_btn {
+    text-align: center;
+    padding-top: 50px;
+}
+#summary .summary_btn button {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFF;
+    padding: 19px 17px;
+    background-color: #FD6E0A;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Footer Part */
+#footer {
+    background-color: #FFF8F3;
+    padding: 130px 0px;
+}
+#footer .footerLeft_col {
+    width: 50%;
+}
+#footer .footerLeft_col h4 {
+    font-size: 35px;
+    font-weight: 700px;
+    color: #181818;
+}
+#footer .footerLeft_col p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+#footer .footerLeft_col a {
+    font-size: 24px;
+    color: #FD6E0A;
+    margin-right: 24px;
+}
+#footer .footerRight_col {
+    width: 50%;
+}
+#footer .footerRight_col h4 {
+    font-size: 35px;
+    font-weight: 700px;
+    color: #181818;
+    margin-bottom: 24px;
+}
+#footer .footerRight_col input {
+    display: block;
+    padding: 18px 350px 18px 30px;
+    margin-bottom: 24px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #757575;
+}
+#footer .footerRight_col textarea {
+    padding: 18px 0px 0px 30px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #757575;
+    margin-bottom: 24px;
+}
+#footer .footerRight_col form button {
+    padding: 18px 38px;
+    border-radius: 5px;
+    background-color: #FD6E0A;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFF;
+    border: none;
+}
